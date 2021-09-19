@@ -33,7 +33,8 @@ const Header = () => {
 						<input
 							type='text'
 							placeholder='Search'
-							className='flex flex-shrink ml-2 items-center bg-transparent outline-none placeholder-gray-500'
+							className='hidden md:inline-flex flex-shrink ml-2
+								items-center bg-transparent outline-none placeholder-gray-500'
 						/>
 					</div>
 				</div>
@@ -41,12 +42,24 @@ const Header = () => {
 				{/* Middle */}
 				<div className='flex justify-center flex-grow'>
 					<div className='flex space-x-6'>
-						<HeaderIcon Icon={HomeIcon} />
+						<HeaderIcon Icon={HomeIcon} active={true} />
 						<HeaderIcon Icon={FlagIcon} />
 						<HeaderIcon Icon={PlayIcon} />
 						<HeaderIcon Icon={ShoppingCartIcon} />
 						<HeaderIcon Icon={UserGroupIcon} />
 					</div>
+				</div>
+
+				{/* Right side */}
+				<div className='flex items-center sm:space-x-2'>
+					{/* <Image 
+
+					/> */}
+					<p className='font-semibold pr-3 whitespace-nowrap'>Rohit Prakash</p>
+					<ViewGridIcon className='icon' />
+					<ChatIcon className='icon' />
+					<BellIcon className='icon' />
+					<ChevronDownIcon className='icon' />
 				</div>
 			</div>
 		</>
