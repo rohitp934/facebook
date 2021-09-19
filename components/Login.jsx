@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { signIn } from 'next-auth/client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Login = () => {
 	return (
